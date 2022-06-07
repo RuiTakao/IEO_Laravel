@@ -1,0 +1,270 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+/* header */
+header {
+    background: #f6e900;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav_lists {
+    display: flex;
+}
+
+.header_nav_list {
+    font-weight: bold;
+    background: #d8d881;
+    padding: 4px 8px;
+}
+
+.header_nav_list:not(:first-child) {
+    margin-left: 14px;
+}
+
+/* footer */
+footer {
+   background: #3d4040;
+   height: 200px;
+   padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    color: #fff;
+}
+
+/* main */
+main {
+    background: #f6f6f4;
+    padding: 20px 0;
+}
+
+/* トップページ */
+.main_content_lists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_content_list {
+    width: calc(100% / 2 - 5% / 2);
+    background: #fff;
+    box-shadow: 5px 5px 10px rgb(92, 90, 90);
+    padding: 24px 16px;
+}
+
+.main_content_list:not(:nth-child(2n + 1)) {
+    margin-left: 5%;
+}
+
+.main_content_list:nth-child(n + 3) {
+    margin-top: 10px;
+}
+
+.main_content_list_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main_content_name {
+    color: #000;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.main_content_create_time {
+    font-size: 10px;
+    line-height: 1em;
+}
+
+
+.main_content_list_body {
+    margin-top: 16px;
+}
+
+.main_content_title {
+    font-size: 18px;
+}
+
+.main_content_title > a {
+    color: #000;
+}
+
+.main_content_list_foot {
+    margin-top: 10px;
+}
+
+.main_content_categories {
+    display: flex;
+}
+
+.main_content_category {
+    font-size: 14px;
+}
+
+.main_content_category:not(:last-child):after {
+    content: ',';
+}
+
+.main_content_category:not(:first-child) {
+    margin-left: 4px;
+}
+
+.main_content_like {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* 投稿ページ */
+input, textarea {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-size: 18px;
+}
+
+.form {
+    padding: 50px 0 70px;
+}
+
+.form_contents_input {
+    margin-top: 20px;
+}
+
+.form_contents_input textarea {
+    height: 400px;
+}
+
+.form_submit {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.form_submit button {
+    font-size: 18px;
+    border: none;
+    background: #f6e900;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form_submit button:hover {
+    opacity: .6;
+}
+
+/* アイデア詳細ページ、投稿エリア */
+.idea_content_area {
+    background: #fff;
+    width: 100%;
+    padding: 24px 16px;
+}
+
+.idea_content_name {
+    font-size: 14px;
+    color: #000;
+}
+
+.idea_content_create_time {
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+.idea_content_body {
+    margin-top: 16px;
+}
+
+.idea_content_body_text {
+    margin-top: 16px;
+}
+
+.idea_content_foot {
+    margin-top: 16px;
+}
+
+.idea_content_like {
+    font-size: 14px;
+    color: #000;
+}
+
+/* アイデア詳細ページ、コメントエリア */
+.idea_comment_area {
+    background: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 24px 0;
+}
+
+.idea_comment_head {
+    border-bottom: 2px solid #E0E0DC;
+    padding: 16px;
+}
+
+.idea_comment_body_list {
+    border-bottom: 2px solid #E0E0DC;
+    padding: 16px;
+}
+
+.idea_comment_name {
+    font-size: 14px;
+    color: #000;
+}
+
+.idea_comment_create_time {
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+.idea_comment_body_text {
+    margin-top: 8px;
+}
+
+.idea_comment_body_foot {
+    margin-top: 8px;
+}
+
+.idea_comment_like {
+    font-size: 14px;
+    color: #000;
+}
+
+.idea_comment_foot {
+    padding: 16px;
+}
+
+.comment_form textarea{
+    margin-top: 8px;
+}
